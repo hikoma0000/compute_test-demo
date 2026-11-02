@@ -1,0 +1,5 @@
+{
+	"type": "minecraft:div",
+	"left": { "type": "minecraft:sin", "input": "compute_test:to_radians" },
+	"right": { "type": "minecraft:cos", "input": "compute_test:to_radians" }
+}

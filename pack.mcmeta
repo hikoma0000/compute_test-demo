@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "computeコマンドの確認用",
+    "min_format": 121,
+    "max_format": 121
+  }
+}

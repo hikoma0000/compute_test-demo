@@ -1,0 +1,2 @@
+data modify storage compute_test:out value set compute default float compute_test:add
+tellraw @s [{text:"x + y = "},[{storage:"compute_test:in",nbt:"x"}," + ",{nbt:"y",storage:"compute_test:in"}," = "],{storage:"compute_test:out",nbt:"value"}]

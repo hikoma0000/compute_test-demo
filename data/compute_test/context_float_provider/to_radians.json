@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    { "type": "minecraft:storage", "storage": "compute_test:in", "path": "angle" },
+    0.017453292
+  ]
+}

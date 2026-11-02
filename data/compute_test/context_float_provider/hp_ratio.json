@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:div",
+      "left": {
+        "type": "minecraft:storage",
+        "storage": "compute_test:in",
+        "path": "hp"
+      },
+      "right": {
+        "type": "minecraft:storage",
+        "storage": "compute_test:in",
+        "path": "max_hp"
+      }
+    },
+    100
+  ]
+}

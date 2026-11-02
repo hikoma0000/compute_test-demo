@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:conditional",
+  "condition": {
+    "type": "minecraft:random_chance",
+    "chance": {
+      "type": "minecraft:min",
+      "inputs": [
+        {
+          "type": "minecraft:mul",
+          "inputs": [
+            { "type": "minecraft:storage", "storage": "compute_test:in", "path": "crit_rate" },
+            0.01
+          ]
+        },
+        0.8
+      ]
+    }
+  },
+  "on_true": {
+    "type": "minecraft:mul",
+    "inputs": [
+      { "type": "minecraft:storage", "storage": "compute_test:in", "path": "base_damage" },
+      { "type": "minecraft:storage", "storage": "compute_test:in", "path": "crit_multiplier" }
+    ]
+  },
+  "on_false": { "type": "minecraft:storage", "storage": "compute_test:in", "path": "base_damage" }
+}
